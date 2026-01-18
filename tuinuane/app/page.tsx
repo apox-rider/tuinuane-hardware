@@ -1,20 +1,26 @@
+import HeroSection from "@/components/Hero/page";
+import Navbar from "@/components/Nav/page";
 
-import Hero from '@/components/Hero/page';
-
+ 
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
-      <Hero/>
-      
-      {/* FeaturedProducts */}
-      {/* WhyChoose */}
-      {/* HotDeals */}
-      {/* HowItWorks */}
-      {/* Testimonials */}
+    <div className="min-h-screen bg-gradient-to-b from-gray-950 to-gray-900">
+      <Navbar />
 
-      {/* Newsletter */}
+      <main>
 
-    </main>
+        <HeroSection/>
+        {/* <FeaturedProducts />
+        <WhyChooseUs />
+        <HotDeals />
+        <HowItWorks />
+        <Testimonials />
+        <QuoteCTA />
+        <Newsletter /> */}
+      </main>
+
+      {/* <Footer /> */}
+    </div>
   );
 }
